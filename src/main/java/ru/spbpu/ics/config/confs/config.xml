@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	
+	<primary>java</primary>
+	<date_from>2014-10-22T00:00:00</date_from>
+	<date_to>2016-10-22T00:00:00</date_to>
+
+	<technologies>
+		<technology>
+			<name>java</name>
+		</technology>
+		<technology>
+			<name>python</name>
+		</technology>
+		<technology>
+			<name>c++</name>
+		</technology>
+		<technology>
+			<name>c</name>
+		</technology>
+		<technology>
+			<name>c#</name>
+		</technology>
+		
+		<technology>
+			<name>scala</name>
+		</technology>
+		<technology>
+			<name>javascript</name>
+		</technology>
+		<technology>
+			<name>php</name>
+		</technology>
+		<technology>
+			<name>ruby</name>
+		</technology>
+		<technology>
+			<name>objective-c</name>
+		</technology>
+		
+		<technology>
+			<name>delphi</name>
+		</technology>
+		<technology>
+			<name>r</name>
+		</technology>
+		<technology>
+			<name>lisp</name>
+		</technology>
+		<technology>
+			<name>perl</name>
+		</technology>
+		<technology>
+			<name>go</name>
+		</technology>
+	</technologies>
+</root>

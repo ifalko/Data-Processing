@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  </head>
+  <body>
+  <style>
+    	div{
+    		height:600px;
+    		weight:400px;
+    	}
+  </style>
+  <div class="ct-chart ct-perfect-fourth"></div>
+  	<script type="text/javascript">
+		new Chartist.Bar('.ct-chart', {
+		  labels: ['exception', 'java-8', 'reflection', 'string', 'maven', 'android', 'hibernate', 'eclipse', 'spring', 'swing', 'generics', 'collections', 'synchronization', 'multithreading', 'arrays', ],
+		  series: [36, 38, 24, 146, 133, 2549, 127, 167, 311, 62, 45, 21, 18, 173, 386]
+		}, {
+		  distributeSeries: true
+		});
+  	</script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	
+	<primary>java</primary>
+	<date_from>2014-10-22T00:00:00</date_from>
+	<date_to>2016-10-22T00:00:00</date_to>
+
+	<technologies>
+		<technology>
+			<name>collections</name>
+		</technology>
+		<technology>
+			<name>eclipse</name>
+		</technology>
+		<technology>
+			<name>android</name>
+		</technology>
+		<technology>
+			<name>multithreading</name>
+		</technology>
+		<technology>
+			<name>synchronization</name>
+		</technology>
+		<technology>
+			<name>exception</name>
+		</technology>
+		<technology>
+			<name>reflection</name>
+		</technology>
+		<technology>
+			<name>spring</name>
+		</technology>
+		<technology>
+			<name>swing</name>
+		</technology>
+		<technology>
+			<name>string</name>
+		</technology>
+		<technology>
+			<name>arrays</name>
+		</technology>
+		<technology>
+			<name>maven</name>
+		</technology>
+		<technology>
+			<name>java-8</name>
+		</technology>
+		<technology>
+			<name>generics</name>
+		</technology>
+		<technology>
+			<name>hibernate</name>
+		</technology>
+	</technologies>
+</root>
