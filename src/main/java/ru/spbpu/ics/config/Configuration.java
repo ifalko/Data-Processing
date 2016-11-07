@@ -40,7 +40,7 @@ public class Configuration {
 	private static Map<Config, Configuration> configs;
 
     private Config config;
-    private String inFile = "config2.xml";
+    private String inFile = "config.xml";
 
     static {
         configs = new HashMap<>();

@@ -6,6 +6,8 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 import org.bson.Document;
+import org.joda.time.DateTime;
+
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -24,12 +26,17 @@ public class AnalyzerTask_2 {
 		MongoCollection<Document> collection = new MongoClient().getDatabase("data").getCollection("stackoverdb");
 		Map<Integer, Integer> owner = new HashMap<>();
 		Map<Integer, Integer> answerer = new HashMap<>();
+		final int now = new DateTime().getYear();
 		
 		Configuration.getFindIterable(collection).forEach(new Block<Document>(){
 			@Override
 			public void apply(Document doc) {
+				int dateQ = new DateTime(doc.get("question_creation_date")).getYear();
+				int dateA = new DateTime(doc.get("answer_creation_date")).getYear();
 				int owner_age = doc.getInteger("owner_age") == null ? 0 : doc.getInteger("owner_age");
 				int answerer_age = doc.getInteger("answerer_age") == null ? 0 : doc.getInteger("answerer_age");
+				owner_age = owner_age - (now - dateQ);
+				answerer_age = answerer_age - (now - dateA);
 				if( 17 < owner_age && owner_age < 66)
 					owner.compute(owner_age, (k, v)-> v == null ? 1 : v + 1);
 				if( 17 < answerer_age && answerer_age < 66)
