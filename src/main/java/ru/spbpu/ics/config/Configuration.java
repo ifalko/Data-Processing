@@ -19,7 +19,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
 
-public class Configuration {
+final public class Configuration {
 	
 	private final Map<String, String> attr = new HashMap<String, String>(){
 		private static final long serialVersionUID = 1L;

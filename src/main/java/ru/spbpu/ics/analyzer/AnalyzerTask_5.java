@@ -20,7 +20,7 @@ import ru.spbpu.ics.config.Config;
 import ru.spbpu.ics.config.Configuration;
 import ru.spbpu.ics.generator.GeneratorHtml_1;
 
-public class AnalyzerTask_5 {
+public final class AnalyzerTask_5 {
 	
 	@SuppressWarnings({ "unchecked", "resource" })
 	public static void main(String[] args) {

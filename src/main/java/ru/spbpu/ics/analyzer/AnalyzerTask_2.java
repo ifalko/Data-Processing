@@ -18,7 +18,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class AnalyzerTask_2 {
+public final class AnalyzerTask_2 {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
