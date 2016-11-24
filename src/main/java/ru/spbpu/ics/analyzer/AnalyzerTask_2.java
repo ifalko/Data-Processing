@@ -37,10 +37,12 @@ public final class AnalyzerTask_2 {
 				int answerer_age = doc.getInteger("answerer_age") == null ? 0 : doc.getInteger("answerer_age");
 				owner_age = owner_age - (now - dateQ);
 				answerer_age = answerer_age - (now - dateA);
-				if( 17 < owner_age && owner_age < 66)
+				if( 17 < owner_age && owner_age < 66) {
 					owner.compute(owner_age, (k, v)-> v == null ? 1 : v + 1);
-				if( 17 < answerer_age && answerer_age < 66)
+				}
+				if( 17 < answerer_age && answerer_age < 66) {
 					answerer.compute(answerer_age, (k, v)-> v == null ? 1 : v + 1);
+				}
         	}
 				
 		});
